@@ -1,0 +1,38 @@
+{
+  "name": "axios-hooks-request",
+  "version": "0.1.0",
+  "description": "React Hook for Axios.",
+  "main": "dist/cjs/index.js",
+  "types": "dist/cjs/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "react-hooks",
+    "hooks",
+    "axios"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist/ && prettier --write src/ && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kongsakchai/react-axios-hook.git"
+  },
+  "author": "Kong Sakchai <kongs.sakchai@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kongsakchai/react-axios-hook/issues"
+  },
+  "homepage": "https://github.com/kongsakchai/react-axios-hook#readme",
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "axios": "^1.1.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.8.4"
+  }
+}
