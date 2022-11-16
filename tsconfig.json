@@ -25,6 +25,7 @@
     "strict": true, /* Enable all strict type-checking options. */
     "noImplicitAny": true, /* Enable error reporting for expressions and declarations with an implied 'any' type. */
     "noUnusedLocals": true, /* Enable error reporting when local variables aren't read. */
+    "baseUrl": "."
   },
   "include": [
     "src/**/*.ts",

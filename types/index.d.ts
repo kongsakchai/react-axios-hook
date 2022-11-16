@@ -1,7 +1,6 @@
 export interface Options<T> {
   defaultValue?: T;
-  auto?: boolean;
-  errorCatch?: boolean;
+  errorValue?: 'default' | 'present' | T;
 }
 
 export interface SendDataOptions {
@@ -9,7 +8,15 @@ export interface SendDataOptions {
   data?: any;
 }
 
+export interface Result<T> {
+  data?: T,
+  loading: boolean,
+  err: any
+}
+
 export type CallFunction<T> = {
   (params?: string | undefined): Promise<T | undefined>;
   (sendOption?: SendDataOptions | undefined): Promise<T | undefined>;
 };
+
+export type UseAxios<T> = [Result<T>, CallFunction<T>];
