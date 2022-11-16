@@ -1,11 +1,12 @@
 {
-  "name": "axios-hooks-request",
-  "version": "0.1.0",
+  "name": "react-hooks-with-axios",
+  "version": "0.1.1",
   "description": "React Hook for Axios.",
   "main": "dist/cjs/index.js",
   "types": "dist/cjs/types.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src/types"
   ],
   "keywords": [
     "react",
@@ -15,7 +16,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist/ && prettier --write src/ && tsc"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
